@@ -11,9 +11,9 @@ const Login = () => {
     try {
       const response = await axios.post("http://localhost:8080/login", { username, password });
       localStorage.setItem("token", response.data.token);
-      // Navigate to home or dashboard
+      
     } catch (error) {
-      // Handle login error
+      
     }
   };
 
