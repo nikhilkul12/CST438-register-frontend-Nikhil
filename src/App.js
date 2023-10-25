@@ -16,12 +16,12 @@ function App() {
           &nbsp;|&nbsp;&nbsp;
           <Link to="/admin">Admin</Link>{' '}
           &nbsp;|&nbsp;&nbsp;
-          <Link to="/login">Login</Link>  {/* Add Login to the navigation */}
+          <Link to="/login">Login</Link>  {}
           <Switch>
             <Route exact path="/" component={StudentHome} />
             <Route path="/schedule" component={ShowSchedule} />
             <Route path="/admin" component={AdminHome} />
-            <Route path="/login" component={login} />  {/* Add Route for Login */}
+            <Route path="/login" component={login} />  {}
             <Route render={() => <h1>Page not found</h1>} />
           </Switch>
         </div>
